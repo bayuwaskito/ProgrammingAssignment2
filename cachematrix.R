@@ -9,7 +9,7 @@
 makeCacheMatrix <- function(x = matrix()) {
         ## exit the function if determinant zero
         if(det(x)==0){
-          stop("Matrix is not invertible because the determinant for this matrix is zero (singular)")
+          stop("Matrix is not invertible because the determinant for this matrix is zero or singular")
         }
         inverseMtx <- NULL
         setMtx <- function(y) {
